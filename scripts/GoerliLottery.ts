@@ -11,7 +11,15 @@ const contractAddress: string = "0x2F0cF8a8ffAa5e406aD4f158891931292740aFEC";
 let contract: Lottery__factory;
 let token: LotteryToken__factory;
 let accounts: SignerWithAddress[];
-const provider = ethers.getDefaultProvider("goerli");
+//const provider = ethers.getDefaultProvider("goerli");
+//const provider = new ethers.providers.InfuraProvider(
+//    "maticmum",
+//    process.env.INFURA_API_KEY
+//);
+const provider = new ethers.providers.InfuraProvider(
+    "goerli",
+    process.env.INFURA_API_KEY
+);
   
 
 //const BET_PRICE = 1;

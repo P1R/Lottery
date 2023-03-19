@@ -16,15 +16,15 @@ const TOKEN_RATIO = 1000;
 async function main() {
 
   // Deploy Lottery Contract
-  const provider = ethers.getDefaultProvider("goerli");
+  //const provider = ethers.getDefaultProvider("goerli");
   //const provider = new ethers.providers.InfuraProvider(
   //    "maticmum",
   //    process.env.INFURA_API_KEY
   //);
-  //const provider = new ethers.providers.InfuraProvider(
-  //    "goerli",
-  //    process.env.INFURA_API_KEY
-  //);
+  const provider = new ethers.providers.InfuraProvider(
+      "goerli",
+      process.env.INFURA_API_KEY
+  );
 
   console.log({ provider });
   const pkey = process.env.PRIVATE_KEY_ACCOUNT1;
