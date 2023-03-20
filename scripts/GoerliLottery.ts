@@ -26,7 +26,7 @@ const provider = new ethers.providers.InfuraProvider(
 // 0.1 % fee don't be geedy ;)
 //const BET_FEE = 0.01;
 // costs 1 miliETH
-//const TOKEN_RATIO = 1000;
+const TOKEN_RATIO = 1000;
 
 async function main() {
   await initAccounts();
